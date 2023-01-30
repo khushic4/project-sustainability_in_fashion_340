@@ -19,7 +19,7 @@ a {
     text-decoration: none;
 }
 
-.about{
+.container{
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
@@ -163,6 +163,7 @@ footer {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
+    margin-bottom: 50px;
   }
 
 .brand-container {
@@ -174,7 +175,7 @@ footer {
   }
 
   .brand-container p {
-    padding: .1rem 1rem;
+    padding: 1rem 2rem;
   }
   
   .brand-container img {
@@ -182,3 +183,9 @@ footer {
     border-radius: 10px 10px 0 0;
   }
   
+  .subcategoryTitle, .itemTitle {
+    margin-left: 150px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
