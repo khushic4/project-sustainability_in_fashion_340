@@ -11,6 +11,7 @@ body {
     background-color: #F4E7DC;
 }
 
+
 .name {
     color: #525b38;
 }
@@ -187,9 +188,8 @@ footer {
 .brand-container img {
     height: 300px;
     border-radius: 10px 10px 0 0;
-}
-  
-.subcategoryTitle, .itemTitle  {
+  }
+  .subcategoryTitle, .itemTitle  {
     margin-left: 150px;
     display: flex;
     align-items: center;
@@ -219,7 +219,7 @@ main {
     }
 }
 
-@media screen (min-width: 992px){
+@media screen (min-width: 992px) {
     nav a{
         font-size: 1.5rem;
     }
@@ -231,4 +231,36 @@ main {
     h2{
         font-size: 3rem;
     }
+    h2{
+        font-size: 3rem;
+    }
+    
 }
+
+.style {
+    display: inline-flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    flex-direction: row;
+    align-content: space-between;
+  }
+  
+  .style-container {
+    flex: 0 0 19rem; 
+    background-color: white; 
+    border-radius: 10px;
+    margin: 0.5rem; 
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.16), 0 1px 3px rgba(0, 0, 0, 0.23);
+  }
+
+  .style-container p {
+    padding: .1rem 1rem;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+  }
+
+  .style-container img {
+    height: 400px;
+    min-width: 100%;
+    border-radius: 10px 10px 0 0;
+  }
