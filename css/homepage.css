@@ -19,7 +19,7 @@ a {
     text-decoration: none;
 }
 
-.about{
+.container{
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
@@ -72,10 +72,16 @@ nav img {
 }
 
 .navbar {
-    padding: 35px;
+    position: fixed;
+    background-color: white;
+    padding: 10px;
     display: flex;
     align-items: center;
     justify-content: space-between;
+    top: 0;
+    left: 0;
+    width: 100%;
+    color: white;
 }
 
 .navbar ul li {
@@ -163,7 +169,8 @@ footer {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-  }
+    margin-bottom: 50px;
+}
 
 .brand-container {
     flex: 0 0 250px;
@@ -171,14 +178,57 @@ footer {
     border-radius: 10px;
     margin: 0.5rem;
     box-shadow: 0 1px 3px rgba(0, 0, 0, 0.16), 0 1px 3px rgba(0, 0, 0, 0.23);
-  }
+}
 
-  .brand-container p {
-    padding: .1rem 1rem;
-  }
+.brand-container p {
+    padding: 1rem 2rem;
+}
   
-  .brand-container img {
+.brand-container img {
     height: 300px;
     border-radius: 10px 10px 0 0;
-  }
+}
   
+.subcategoryTitle, .itemTitle  {
+    margin-left: 150px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+main {
+    margin-top: 70px;
+}
+
+@media screen (min-width: 598px){
+    navbar{
+        display: none;
+    }
+}
+
+@media screen (min-width: 768px){
+    html{
+        height: 100%;
+    }
+
+    footer{
+        bottom: 0;
+        right: 0;
+        display: block;
+        position: fixed;
+    }
+}
+
+@media screen (min-width: 992px){
+    nav a{
+        font-size: 1.5rem;
+    }
+
+    h1{
+        font-size: 5rem;
+    }
+
+    h2{
+        font-size: 3rem;
+    }
+}
