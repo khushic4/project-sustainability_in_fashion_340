@@ -8,7 +8,7 @@
 body {
     margin: 1rem;
     color: #525b38;
-    background-color: #F4E7DC;
+    background-color: #ffffff;
 }
 
 
@@ -137,7 +137,7 @@ footer {
     display: flex;
     align-items: center;
     justify-content: center;
-    margin: 2rem 0;
+    margin: 2rem 5rem;
 }
 
 .links a {
@@ -175,29 +175,23 @@ footer {
 
 .brand-container {
     flex: 0 0 250px;
-    background-color: white;
-    border-radius: 10px;
     margin: 0.5rem;
-    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.16), 0 1px 3px rgba(0, 0, 0, 0.23);
 }
 
 .brand-container p {
-    padding: 1rem 2rem;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    color: #525B38;
 }
   
 .brand-container img {
     height: 300px;
-    border-radius: 10px 10px 0 0;
   }
-  .subcategoryTitle, .itemTitle  {
-    margin-left: 150px;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-}
 
 main {
     margin-top: 70px;
+    margin-bottom: 120px;
+    
 }
 
 @media screen (min-width: 598px){
@@ -247,20 +241,16 @@ main {
   
   .style-container {
     flex: 0 0 19rem; 
-    background-color: white; 
-    border-radius: 10px;
     margin: 0.5rem; 
-    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.16), 0 1px 3px rgba(0, 0, 0, 0.23);
   }
 
   .style-container p {
-    padding: .1rem 1rem;
     margin-top: 1rem;
     margin-bottom: 1rem;
+    color: #525B38;
   }
 
   .style-container img {
     height: 400px;
     min-width: 100%;
-    border-radius: 10px 10px 0 0;
   }
