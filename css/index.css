@@ -196,6 +196,7 @@ footer {
   
 .brand-container img {
     height: 270px;
+    width: 400px;
 }
 
 .brand-image {
@@ -239,7 +240,30 @@ main {
     
 }
 
-@media screen (min-width: 598px){
+.style {
+    display: inline-flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    flex-direction: row;
+    align-content: space-between;
+  }
+  
+  .style-container {
+    flex: 0 0 19rem; 
+    margin: 0.5rem; 
+  }
+
+  .style-container p {
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    color: #525B38;
+  }
+
+  .style-container img {
+    height: 400px;
+    min-width: 100%;
+  }
+  @media screen (min-width: 598px){
     navbar{
         display: none;
     }
@@ -273,29 +297,5 @@ main {
     h2{
         font-size: 3rem;
     }
-    
+
 }
-
-.style {
-    display: inline-flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    flex-direction: row;
-    align-content: space-between;
-  }
-  
-  .style-container {
-    flex: 0 0 19rem; 
-    margin: 0.5rem; 
-  }
-
-  .style-container p {
-    margin-top: 1rem;
-    margin-bottom: 1rem;
-    color: #525B38;
-  }
-
-  .style-container img {
-    height: 400px;
-    min-width: 100%;
-  }
