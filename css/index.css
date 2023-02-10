@@ -73,6 +73,7 @@ nav img {
 }
 
 .navbar {
+    z-index: 1;
     position: fixed;
     background-color: white;
     padding: 10px;
@@ -176,6 +177,15 @@ footer {
 .brand-container {
     flex: 0 0 250px;
     margin: 0.5rem;
+    position: relative;
+    position:
+}
+
+.brand-container::hover::after {
+    background: #000000;
+    display: block;
+    margin: auto;
+    transition: .5s;
 }
 
 .brand-container p {
@@ -185,8 +195,43 @@ footer {
 }
   
 .brand-container img {
-    height: 300px;
-  }
+    height: 270px;
+}
+
+.brand-image {
+    opacity: 1;
+    display: block;
+    height: auto;
+    transition: .5s ease;
+    backface-visibility: hidden;
+}
+  
+.brand-middle {
+    transition: .5s ease;
+    opacity: 0;
+    position: absolute;
+    text-align: center;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    text-align: center;
+}
+  
+.brand-container:hover .brand-image {
+    opacity: 0.2;
+}
+
+.brand-container:hover .brand-middle {
+    opacity: 1;
+}
+
+.brand-text {
+    background-color: #525B38;
+    color: white;
+    font-size: 16px;
+    padding: 16px 32px;
+}
 
 main {
     margin-top: 70px;
