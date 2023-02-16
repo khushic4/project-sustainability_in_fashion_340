@@ -263,13 +263,17 @@ main {
     height: 400px;
     min-width: 100%;
   }
-  @media screen (min-width: 598px){
+
+  @media (min-width: 598px){
     navbar{
+        display: none;
+    }
+    #hamburger-menu {
         display: none;
     }
 }
 
-@media screen (min-width: 768px){
+@media (min-width: 768px){
     html{
         height: 100%;
     }
@@ -282,7 +286,7 @@ main {
     }
 }
 
-@media screen (min-width: 992px) {
+@media (min-width: 992px) {
     nav a{
         font-size: 1.5rem;
     }
