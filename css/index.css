@@ -74,7 +74,6 @@ nav img {
 
 .navbar {
     z-index: 1;
-    position: fixed;
     background-color: white;
     padding: 10px;
     display: flex;
@@ -125,7 +124,7 @@ footer {
 .footer-info h3 {
     font-size: 1.5rem;
     font-weight: 400;
-    line-height: 3rem;
+    line-height: 2rem;
 
 }
 
@@ -178,7 +177,7 @@ footer {
     flex: 0 0 250px;
     margin: 0.5rem;
     position: relative;
-    position:
+    
 }
 
 .brand-container::hover::after {
@@ -263,26 +262,21 @@ main {
     height: 400px;
     min-width: 100%;
   }
-  @media screen (min-width: 598px){
+
+
+@media (min-width: 598px){
     navbar{
         display: none;
     }
 }
 
-@media screen (min-width: 768px){
+@media (min-width: 768px){
     html{
         height: 100%;
     }
-
-    footer{
-        bottom: 0;
-        right: 0;
-        display: block;
-        position: fixed;
-    }
 }
 
-@media screen (min-width: 992px) {
+@media (min-width: 992px) {
     nav a{
         font-size: 1.5rem;
     }
