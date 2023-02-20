@@ -263,16 +263,9 @@ main {
     min-width: 100%;
   }
 
-<<<<<<< HEAD
-  @media (min-width: 598px){
-=======
 
 @media (min-width: 598px){
->>>>>>> 28aef315ab917706f04be8b8fe87893a06fabe4b
     navbar{
-        display: none;
-    }
-    #hamburger-menu {
         display: none;
     }
 }
