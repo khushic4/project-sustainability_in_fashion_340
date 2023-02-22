@@ -9,6 +9,10 @@ import { Footer } from './my-app/src/footer.js';
 
 export default function App(props) {
     return (
+        <>
+        <NavBar/>
+        </>
+        
         // put components in 'divs' here
     );
 }
