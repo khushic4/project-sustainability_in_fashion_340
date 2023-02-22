@@ -9,10 +9,11 @@ import { Footer } from './my-app/src/footer.js';
 
 export default function App(props) {
     return (
-        <>
+        <div>
         <NavBar/>
-        </>
+        <Brands brands={brandsData} />
+        <Category categories={categoryData}/>
+        </div>
         
-        // put components in 'divs' here
     );
 }
