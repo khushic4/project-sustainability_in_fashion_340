@@ -196,7 +196,7 @@ const brandsData = [
     }
 ];
 
-export function Brands({ brands }) {
+export default function Brands({ brands }) {
     return (
         <div>
         {brands.map((brand) => (
@@ -205,6 +205,7 @@ export function Brands({ brands }) {
         </div>
     );
 };
-  
+
+
 
   

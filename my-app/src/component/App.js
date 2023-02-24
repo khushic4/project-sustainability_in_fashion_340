@@ -10,7 +10,7 @@ import { Footer } from './Footer.js';
 
 export default function App(props) {
     const { brandsData, categoryData } = props;
-    
+
     return (
         <div>
             <NavBar/>
@@ -20,6 +20,5 @@ export default function App(props) {
             <AboutPage />
             <Footer />
         </div>
-        
     );
 }

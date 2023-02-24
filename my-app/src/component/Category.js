@@ -28,7 +28,7 @@ const categoryData = [
     }
 ];
 
-export function Category({ category, brands }) {
+export default function Category({ category, brands }) {
     return (
         <div>
         <h2>{category}</h2>
@@ -41,4 +41,3 @@ export function Category({ category, brands }) {
         </div>
     );
 }; 
-
