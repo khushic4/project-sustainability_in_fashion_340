@@ -1,5 +1,5 @@
 import React from 'react';
-import { Brand } from './Brand.js';
+import { Brands } from './Brands.js';
 
 const categoryData = [
     {
@@ -28,14 +28,14 @@ const categoryData = [
     }
 ];
 
-export function Category({ category, brands }) {
+export default function Category({ category, brands }) {
     return (
         <div>
         <h2>{category}</h2>
         <ul>
             {brands.filter((brand) => brand.category === category)
             .map((brand) => (
-                <Brand key={brand.category} brand={brand} />
+                <Brands key={categoryData} brand={brand} />
             ))}
         </ul>
         </div>
