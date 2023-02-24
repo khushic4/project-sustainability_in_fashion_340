@@ -19,7 +19,7 @@ export default function App(props) {
         <Brands brands={brandsData} />
         <Category categories={categoryData}/>
 =======
-            <NavBar/>
+            <NavBar />
             <HeaderBar />
             <Brands brands={brandsData} />
             <Category categories={categoryData}/>
