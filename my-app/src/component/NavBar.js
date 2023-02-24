@@ -1,28 +1,23 @@
 import React from 'react';
 
-export default function NavBar(props) {
+export function NavBar(props) {
 
     let navLinks;
 
     return (
-        <header>
-            <div className="navbar-bg">
-                <nav>
-                    <div id="hamburger-menu"><a href="#"><i class="fa fa-bars" aria-label="menu"></i></a></div>
-                    <div className="navbar">
-                        <ul>
-                            <li><a href="index.html"> <img alt="Navigation" src="img/sitelogo.jpeg" class="logo"></li>
-                                <li><h1 class="name">ShopSpree</h1></li>
-                            </ul>
-                            </a>
-                            <ul>
-                                <li><a href="index.html">home</a></li>
-                                <li><a href="items.html">items</a></li>
-                                <li><a href="about.html">about us</a></li>
-                            </ul>
-                    </div>
-                </nav>
+        <nav>
+            <div id="hamburger-menu"><a href="#"><i class="fa fa-bars" aria-label="menu"></i></a></div>
+                <div class="navbar">
+                    <ul>
+                        <a><li> href="index.html" <img alt="Navigation" src="img/sitelogo.jpeg" class="logo"></img></li>
+                        <li><h1 class="name">ShopSpree</h1></li></a>
+                    </ul>
+                    <ul>
+                        <li><a href="index.html">home</a></li>
+                        <li><a href="items.html">items</a></li>
+                        <li><a href="about.html">about us</a></li>
+                    </ul>
             </div>
-        </header>
+        </nav>
     );
 }

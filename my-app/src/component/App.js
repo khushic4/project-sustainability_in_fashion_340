@@ -1,18 +1,24 @@
 import React from 'react';
 
-import { HeaderBar } from './my-app/src/HeaderBar.js';
-import { NavBar } from './my-app/src/NavBar.js';
-import { AboutPage } from './my-app/src/AboutPage.js';
-import { Category } from './my-app/src/Category.js';
-import { Brands } from './my-app/src/Brands.js';
-import { Footer } from './my-app/src/footer.js';
+import { HeaderBar } from './HeaderBar.js';
+import { NavBar } from './NavBar.js';
+import { AboutPage } from './AboutPage.js';
+import { Category } from './Category.js';
+import { Brands } from './Brands.js';
+import { Footer } from './Footer.js';
+
 
 export default function App(props) {
+    const { brandsData, categoryData } = props;
+    
     return (
         <div>
-        <NavBar/>
-        <Brands brands={brandsData} />
-        <Category categories={categoryData}/>
+            <NavBar/>
+            <HeaderBar />
+            <Brands brands={brandsData} />
+            <Category categories={categoryData}/>
+            <AboutPage />
+            <Footer />
         </div>
         
     );

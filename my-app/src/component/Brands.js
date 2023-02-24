@@ -1,4 +1,5 @@
 import React from 'react';
+import Category from './Category.js'
 
 const brandsData = [
     {
@@ -199,7 +200,7 @@ export function Brands({ brands }) {
     return (
         <div>
         {brands.map((brand) => (
-            <Category key={brand.category} category={brand.category} brands={brands} />
+            <Category key={brandsData} brands={brands} />
         ))}
         </div>
     );
