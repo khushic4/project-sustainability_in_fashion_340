@@ -1,6 +1,9 @@
 import React from 'react';
 
-export function NavBar() {
+export default function NavBar(props) {
+
+    let navLinks;
+
     return (
         <header>
             <div className="navbar-bg">
@@ -9,14 +12,14 @@ export function NavBar() {
                     <div className="navbar">
                         <ul>
                             <li><a href="index.html"> <img alt="Navigation" src="img/sitelogo.jpeg" class="logo"></li>
-                            <li><h1 class="name">ShopSpree</h1></li>
-                        </ul>
-                        </a>
-                        <ul>
-                            <li><a href="index.html">home</a></li>
-                            <li><a href="items.html">items</a></li>
-                            <li><a href="about.html">about us</a></li>
-                        </ul>
+                                <li><h1 class="name">ShopSpree</h1></li>
+                            </ul>
+                            </a>
+                            <ul>
+                                <li><a href="index.html">home</a></li>
+                                <li><a href="items.html">items</a></li>
+                                <li><a href="about.html">about us</a></li>
+                            </ul>
                     </div>
                 </nav>
             </div>
