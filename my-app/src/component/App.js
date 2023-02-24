@@ -11,6 +11,7 @@ export default function App(props) {
     return (
         <div>
         <NavBar/>
+        <AboutPage/>
         <Brands brands={brandsData} />
         <Category categories={categoryData}/>
         </div>
