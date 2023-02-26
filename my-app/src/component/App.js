@@ -4,7 +4,7 @@
 import React from 'react';
 import { NavBar } from './NavBar.js';
 import { AboutPage } from './AboutPage.js';
-//import { ItemPage } from './Items.js';
+import { ItemPage } from './ItemPage.js';
 //import { Category } from './Category.js';
 //import { Brands } from './Brands.js';
 import { Footer } from './Footer.js';
@@ -15,8 +15,9 @@ function App(props) {
 
     return (
         <div>
-            <NavBar/>
-            <Homepage/>
+            <NavBar />
+            <Homepage />
+            <ItemPage />
             <AboutPage />
             <Footer/>
         {/* <Brands brands={brandsData} /> */}
