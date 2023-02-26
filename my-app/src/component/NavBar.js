@@ -1,7 +1,17 @@
 import React from 'react';
 import { Link, NavLink } from 'react-router-dom';
 
+
+
 export function NavBar() {
+
+    const menuIcon = document.querySelector('.hamburger-menu');
+    const menu = document.querySelector('.navbar');
+
+    menuIcon.addEventListener('click', () => {
+        menu.classList.toggle('show');
+    });
+
     return (
         <header className="navbar-bg">
             <nav>
