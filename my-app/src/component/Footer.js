@@ -10,9 +10,9 @@ export function Footer(props) {
                 </p>
                 <p>Stay up to date with all the latest trends through our socials.</p>
                 <ul class="links">
-                    <li><a href="https://www.facebook.com/UWiSchool" target="_blank"><i class="fa fa-facebook-f"></i></a>
+                    <li><a href="https://www.facebook.com/UWiSchool" target="_blank"><i className="fa fa-facebook-f"></i></a>
                     </li>
-                    <li><a href="https://www.instagram.com/uwischool/" target="_blank"><i class="fa fa-instagram"></i></a>
+                    <li><a href="https://www.instagram.com/uwischool/" target="_blank"><i className="fa fa-instagram"></i></a>
                     </li>
                     <li><a href="https://twitter.com/uw_ischool?s=20&t=6g6UTfndELpQXwPyzvzTog" target="_blank"><i
                         class="fa fa-twitter"></i></a></li>
