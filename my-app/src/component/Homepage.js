@@ -31,7 +31,7 @@ function StyleCategories(props) {
             </div>
         );
     });
-    
+
     return (
         <main>
             <h1 style={{ margin: "2em" }}>shop by style category</h1>
