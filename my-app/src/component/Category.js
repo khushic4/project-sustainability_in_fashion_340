@@ -1,43 +1,34 @@
 import React from 'react';
-import { Brands } from './Brands.js';
+import { BrandList } from './BrandList.js';
 
-const categoryData = [
-    {
-      category: 'Casual, Everyday Wear',
-    },
-    {
-      category: 'Night Out',
-    },
-    {
-      category: 'Business Casual Office Wear',
-    },
-    {
-      category: 'Athleisure and Athletic Clothing',
-    },
-    {
-      category: 'Formal Wear',
-    },
-    {
-      category: 'Intimates',
-    },
-    {
-      category: 'Beach and Vacation Wear',
-    },
-    {
-      category: 'Accessories',
-    }
-];
 
-export default function Category({ category, brands }) {
+export default function Category(props) {
+  const { categoryData, category, brands } = props;
+
     return (
         <div>
         <h2>{category}</h2>
         <ul>
             {brands.filter((brand) => brand.category === category)
             .map((brand) => (
-                <Brands key={categoryData} brand={brand} />
+                <BrandList key={categoryData} brand={brand} />
             ))}
         </ul>
         </div>
     );
 }; 
+
+function CategoryCard(props) {
+  const { categoryData } = props;
+  const {name} = categoryData;
+
+  return (
+    <div className="style-container">
+        <a href={categoryData.html}>
+        <img src={categoryData.img} alt={categoryData.name}/>
+        <p>{categoryData.name}</p>
+      </a>
+    </div>
+  );
+}
+

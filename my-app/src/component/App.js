@@ -6,12 +6,13 @@ import { NavBar } from './NavBar.js';
 import { AboutPage } from './AboutPage.js';
 import { ItemPage } from './ItemPage.js';
 //import { Category } from './Category.js';
-//import { Brands } from './Brands.js';
+//import { BrandList } from './BrandList.js';
 import { Footer } from './Footer.js';
 import { Homepage } from './Homepage.js';
 
 function App(props) {
     //const { brandsData, categoryData } = props;
+    //const { brands } = props.brands;
 
     return (
         <div>
