@@ -3,7 +3,7 @@
 
 import React from 'react';
 import { NavBar } from './NavBar.js';
-//import { AboutPage } from './AboutPage.js';
+import { AboutPage } from './AboutPage.js';
 //import { ItemPage } from './Items.js';
 //import { Category } from './Category.js';
 //import { Brands } from './Brands.js';
@@ -17,8 +17,8 @@ function App(props) {
         <div>
             <NavBar/>
             <Homepage/>
+            <AboutPage />
             <Footer/>
-        {/* <AboutPage/> */}
         {/* <Brands brands={brandsData} /> */}
         {/* <Category categories={categoryData}/> */}
         </div>
