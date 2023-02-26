@@ -1,16 +1,13 @@
 import React from 'react';
 
-export function NavBar(props) {
-
-    let navLinks;
-
+export function NavBar() {
     return (
         <nav>
-            <div id="hamburger-menu"><a href="#"><i class="fa fa-bars" aria-label="menu"></i></a></div>
-                <div class="navbar">
+            <div id="hamburger-menu"><a href="#"><i className="fa fa-bars" aria-label="menu"></i></a></div>
+                <div className="navbar">
                     <ul>
-                        <a><li> href="index.html" <img alt="Navigation" src="img/sitelogo.jpeg" class="logo"></img></li>
-                        <li><h1 class="name">ShopSpree</h1></li></a>
+                        <a><li> href="index.html" <img alt="Navigation" src="img/sitelogo.jpeg" className="logo"/></li>
+                        <li><h1 className="name">ShopSpree</h1></li></a>
                     </ul>
                     <ul>
                         <li><a href="index.html">home</a></li>
