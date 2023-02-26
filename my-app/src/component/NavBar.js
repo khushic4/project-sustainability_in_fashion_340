@@ -8,41 +8,46 @@ export function NavBar() {
     const menuIcon = document.querySelector('.hamburger-menu');
     const menu = document.querySelector('.navbar');
 
-    menuIcon.addEventListener('click', () => {
-        menu.classList.toggle('show');
-    });
+    const [menuVisibility, setMenuVisibility] = useState(false);
 
+    const handleClick = () => {
+        setMenuVisibility(!menuVisibility);
+        if(menuVisibility == )
+        console.log("I have been clicked");
+    }
+https://prod.liveshare.vsengsaas.visualstudio.com/join?490E05EF463C319B63C64A519F1C9AE0BF31
     return (
         <header className="navbar-bg">
             <nav>
-            <div id="hamburger-menu">
-                <a href="#">
-                    <i className="fa fa-bars" aria-label="menu" />
-                </a>
-            </div>
+                <button onClick={handleClick} className="hamburger-menu"><i aria-label="menu"></i>
+                    <span className="icon-bar"></span>
+                    <span className="icon-bar"></span>
+                    <span className="icon-bar"></span>
+                </button>
+
             <div className="navbar">
                 <ul>
                     <li>
-                        <a href="index.html">{" "}
+                        <Link to="index.html">
                         <img alt="Navigation" src="img/sitelogo.jpeg" className="logo" />
-                        </a>
+                        </Link>
                     </li>
-                    <a href="index.html">
+                    <Link to="index.html">
                         <li>
                             <h1 className="name">ShopSpree</h1>
                         </li>
-                    </a>
+                    </Link>
                     </ul>
-                        <a href="index.html"></a>
+                        <Link to="index.html"></Link>
                     <ul>
                     <li>
-                        <a href="index.html">home</a>
+                        <Link to="index.html">home</Link>
                     </li>
                     <li>
-                        <a href="items.html">items</a>
+                        <Link to="items.html">items</Link>
                     </li>
                     <li>
-                        <a href="about.html">about us</a>
+                        <Link to="about.html">about us</Link>
                     </li>
                 </ul>
             </div>
