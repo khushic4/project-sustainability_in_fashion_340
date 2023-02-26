@@ -1,61 +1,47 @@
 import React from 'react';
+import { useNavigate } from 'react-router-dom';
 
-export function Homepage() {
+import STYLE_CATEGORIES from '../data/stylecategories.json'
+
+export function HomePage(props) {
+    return (
+        <div>
+            <StyleCategories applyFilterCallback={props.applyFilterCallback} />
+        </div>
+    )
+
+}
+
+function StyleCategories(props) {
+
+    const navigate = useNavigate();
+
+    const handleSubmit = (event, prop) => {
+       props.applyFilterCallback(prop); 
+       navigate('/BrowsePage');
+    }
+
+    const categories = STYLE_CATEGORIES.map((sustainableCategory) => {
+        return (
+            <div className="home-card" type="button" key={sustainableCategory.title}>
+                <div className="category-link" onClick={(event) => handleSubmit(event, sustainableCategory.category)} >
+                    <img src={sustainableCategory.img} />
+                    <h3>{sustainableCategory.title}</h3> 
+                </div>
+            </div>
+        );
+    });
+    
     return (
         <main>
             <h1 style={{ margin: "2em" }}>shop by style category</h1>
             <div className="style">
                 <div className="style-container">
-                    <a href="casual.html">
-                    <img src="img/casualeveryday.jpg" alt="Casual Everyday" />
-                    <p>Casual, Everyday Wear</p>
-                    </a>
-                </div>
-                <div className="style-container">
-                    <a href="nightOut.html">
-                        <img src="img/nightout.jpg" alt="Going Out" />
-                        <p>Night Out</p>
-                    </a>
-                </div>
-                <div className="style-container">
-                    <a href="businesscas.html">
-                        <img src="img/businesscasual.jpg" alt="Business Casual" />
-                        <p>Business Casual Office Wear</p>
-                    </a>
-                </div>
-                <div className="style-container">
-                    <a href="Athleisure.html">
-                        <img src="img/athleisure.jpg" alt="Athleisure" />
-                        <p>Athleisure and Athletic Clothing</p>
-                    </a>
-                </div>
-                <div className="style-container">
-                    <a href="formal.html">
-                        <img src="img/formal.jpg" alt="Formal Wear" />
-                        <p>Formal Wear</p>
-                    </a>
-                </div>
-                <div className="style-container">
-                    <a href="intimates.html">
-                        <img src="img/intimates.jpg" alt="Intimates" />
-                        <p>Intimates</p>
-                    </a>
-                </div>
-                <div className="style-container">
-                    <a href="beachwear.html">
-                        <img src="img/vacation.jpg" alt="Vacation" />
-                        <p>Beach and Vacation Wear</p>
-                    </a>
-                </div>
-                <div className="style-container">
-                    <a href="accessories.html">
-                        <img src="img/accessories.jpg" alt="Accessories" />
-                        <p>Accessories</p>
-                    </a>
+                    {categories}
                 </div>
             </div>
-    </main>
- 
+        </main>
     )
-
 }
+
+
