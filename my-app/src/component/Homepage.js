@@ -21,12 +21,12 @@ function StyleCategories(props) {
        navigate('/BrowsePage');
     }
 
-    const categories = STYLE_CATEGORIES.map((sustainableCategory) => {
+    const categories = STYLE_CATEGORIES.map((categories) => {
         return (
-            <div className="home-card" type="button" key={sustainableCategory.title}>
-                <div className="category-link" onClick={(event) => handleSubmit(event, sustainableCategory.category)} >
-                    <img src={sustainableCategory.img} />
-                    <h3>{sustainableCategory.title}</h3> 
+            <div className="home-card" type="button" key={STYLE_CATEGORIES.title}>
+                <div className="category-link" onClick={(event) => handleSubmit(event, STYLE_CATEGORIES.category)} >
+                    <img src={STYLE_CATEGORIES.img} />
+                    <h3>{STYLE_CATEGORIES.title}</h3> 
                 </div>
             </div>
         );

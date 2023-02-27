@@ -1,5 +1,5 @@
-import React from 'react';
 import { Link, NavLink } from 'react-router-dom';
+import React, { useState } from 'react';
 
 
 
@@ -12,10 +12,9 @@ export function NavBar() {
 
     const handleClick = () => {
         setMenuVisibility(!menuVisibility);
-        if(menuVisibility == )
-        console.log("I have been clicked");
+        //if(menuVisibility == )
     }
-https://prod.liveshare.vsengsaas.visualstudio.com/join?490E05EF463C319B63C64A519F1C9AE0BF31
+
     return (
         <header className="navbar-bg">
             <nav>

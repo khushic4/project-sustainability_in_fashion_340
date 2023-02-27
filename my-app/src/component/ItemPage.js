@@ -10,7 +10,7 @@ export function ItemPage() {
             <div className="brand">
                 {/* brand 1*/}
                 <div className="brand-container">
-                    <img alt="Girlfriend Collective" className="brand-image" src="img/girlfriend.png"/>
+                    <img alt="Girlfriend Collective" className="brand-image" src="../img/girlfriendcollective.jpg"/>
                     <div className="brand-middle">
                         <p>Outerwear from Girlfriend Collective.</p>
                         <a href="https://girlfriend.com/collections/outerwear" target="_blank">
