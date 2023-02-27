@@ -1,5 +1,5 @@
-import React from 'react';
-import { Link, NavLink } from 'react-router-dom';
+import React, { useState } from 'react';
+import { Link, NavLink, useNavigate } from 'react-router-dom';
 
 
 
@@ -7,25 +7,32 @@ export function NavBar() {
 
     const menuIcon = document.querySelector('.hamburger-menu');
     const menu = document.querySelector('.navbar');
+    const navigate = useNavigate()
 
     const [menuVisibility, setMenuVisibility] = useState(false);
 
-    const handleClick = () => {
+    const handleHamburgerClick = () => {
         setMenuVisibility(!menuVisibility);
-        if(menuVisibility == )
         console.log("I have been clicked");
     }
+    const handleFunction = (route) => {
+        const handleButtonClick = () => {
+            navigate(route)
+        }
+        return handleButtonClick
+    }
+    
 https://prod.liveshare.vsengsaas.visualstudio.com/join?490E05EF463C319B63C64A519F1C9AE0BF31
     return (
         <header className="navbar-bg">
             <nav>
-                <button onClick={handleClick} className="hamburger-menu"><i aria-label="menu"></i>
+                <button onClick={handleHamburgerClick} className="hamburger-menu"><i aria-label="menu"></i>
                     <span className="icon-bar"></span>
                     <span className="icon-bar"></span>
                     <span className="icon-bar"></span>
                 </button>
 
-            <div className="navbar">
+            { menuVisibility && (<div className="navbar">
                 <ul>
                     <li>
                         <Link to="index.html">
@@ -41,16 +48,16 @@ https://prod.liveshare.vsengsaas.visualstudio.com/join?490E05EF463C319B63C64A519
                         <Link to="index.html"></Link>
                     <ul>
                     <li>
-                        <Link to="index.html">home</Link>
+                        <button onClick={handleFunction('/home')}> home </button>
                     </li>
                     <li>
-                        <Link to="items.html">items</Link>
+                        <button onClick={handleFunction('/items')}> items </button>
                     </li>
                     <li>
-                        <Link to="about.html">about us</Link>
+                    <button onClick={handleFunction('/about')}> about us </button>
                     </li>
                 </ul>
-            </div>
+            </div>) }
             </nav>
         </header>
       

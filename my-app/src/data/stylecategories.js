@@ -1,4 +1,4 @@
-[
+export const STYLE_CATEGORIES = [
     {
         "title": "Casual, Everyday Wear",
         "category": "Sasual",
