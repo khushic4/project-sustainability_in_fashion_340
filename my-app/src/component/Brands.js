@@ -1,10 +1,11 @@
 import React from 'react';
-import { useNavigate } from 'react-router-dom';
+import { useLocation } from 'react-router-dom';
 import { BRANDS } from '../data/brandinfo';
 
-export function Brands(category) {
-
-    const brandCards = (category) => BRANDS.map((brand) => {
+export function Brands() {
+    const {state} = useLocation();
+    const { categoryName } = state; // Read values passed on state
+    const brandCards = (category) => BRANDS.filter(brand => brand.category == category).map((brand) => {
         return (
             <div className="brand-container">
                 <img className="brand-image" src={brand.img} alt={brand.name}/>
@@ -20,9 +21,9 @@ export function Brands(category) {
 
     return (
         <div>
-            <h1 style={{ margin: "2em" }}>{category}</h1>
+            <h1 style={{ margin: "2em" }}>{categoryName}</h1>
             <div className="brand">
-                {brandCards(category)}
+                {brandCards(categoryName)}
             </div>
         </div>
     )

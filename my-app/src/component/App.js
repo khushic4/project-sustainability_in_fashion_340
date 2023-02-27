@@ -11,6 +11,7 @@ import { Category } from './Category.js';
 import { BrandList } from './BrandList.js';
 import { Footer } from './Footer.js';
 import { HomePage } from './Homepage.js';
+import { Brands } from './Brands.js';
 
 
 export default function App(props) {
@@ -24,6 +25,7 @@ export default function App(props) {
                     <Route path="/home" element={<HomePage />} />
                     <Route path="/item" element={<ItemPage />} />
                     <Route path="/about" element={<AboutPage />} />
+                    <Route path="/brands" element={<Brands />} />
                 </Routes>
             </div>
             <Footer />
