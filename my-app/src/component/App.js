@@ -1,5 +1,5 @@
 // import React, { useState } from 'react';
-import { BrowserRouter as Route, Routes } from 'react-router-dom';
+import { Route, Routes } from 'react-router-dom';
 
 //import { Routes, Route, Router } from 'react-router-dom';
 //import { getAuth } from 'firebase/auth';
@@ -18,7 +18,7 @@ export default function App(props) {
     return (
         //<Router>
         <div className="page-content">
-            <NavBar />
+            {<NavBar />}
             <div className="route-choice">
                 <Routes>
                     <Route path="/home" element={<HomePage />} />

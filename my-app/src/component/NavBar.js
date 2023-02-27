@@ -1,15 +1,16 @@
 import React, { useState } from 'react';
 import { Link, NavLink, useNavigate } from 'react-router-dom';
 
+
 export function NavBar(props) {
 
-    const auth = getAuth();
+//    const auth = getAuth();
 
-    function handleClick(event) {
-        signOut(auth)
-            .catch(err => console.log(err));
-        alert('Signing out. You will now be redirected to the home page.');
-    }
+//     function handleClick(event) {
+//         signOut(auth)
+//             .catch(err => console.log(err));
+//         alert('Signing out. You will now be redirected to the home page.');
+//     }
 
     const menuIcon = document.querySelector('.hamburger-menu');
     const menu = document.querySelector('.navbar');
