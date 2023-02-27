@@ -14,20 +14,20 @@ import { Footer } from './Footer.js';
 import { HomePage } from './HomePage.js';
 
 export default function App(props) {
-    
+
     return (
         //<Router>
-            <div className="page-content">
-                <NavBar/>
-                <div className="route-choice">
-                    <Routes>
-                        <Route path="/home" element={<HomePage /> } />
-                        <Route path="/item" element={<ItemPage /> } />
-                        <Route path="/about" element={<AboutPage /> } />
-                    </Routes>
-                </div>
-                <Footer />
+        <div className="page-content">
+            <NavBar />
+            <div className="route-choice">
+                <Routes>
+                    <Route path="/home" element={<HomePage />} />
+                    <Route path="/item" element={<ItemPage />} />
+                    <Route path="/about" element={<AboutPage />} />
+                </Routes>
             </div>
+            <Footer />
+        </div>
         //</Router>
     );
 }
