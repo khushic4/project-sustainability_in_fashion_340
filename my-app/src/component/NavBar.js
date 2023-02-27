@@ -16,7 +16,7 @@ export function NavBar(props) {
     const menu = document.querySelector('.navbar');
     const navigate = useNavigate()
 
-    const [menuVisibility, setMenuVisibility] = useState(false);
+    const [menuVisibility, setMenuVisibility] = useState(true);
 
     const handleHamburgerClick = () => {
         setMenuVisibility(!menuVisibility);
