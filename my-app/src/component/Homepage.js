@@ -4,7 +4,6 @@ import { useNavigate } from 'react-router-dom';
 import { STYLE_CATEGORIES } from '../data/stylecategories'
 
 export function HomePage(props) {
-    console.log("HERE WE ARE")
     return (
         <div>
             <StyleCategories applyFilterCallback={props.applyFilterCallback} />
@@ -23,12 +22,12 @@ function StyleCategories(props) {
         navigate('/BrowsePage');
     }
 
-    const categories = STYLE_CATEGORIES.map((categories) => {
+    const categories = STYLE_CATEGORIES.map((category) => {
         return (
-            <div className="home-card" type="button" key={STYLE_CATEGORIES.title}>
-                <div className="category-link" onClick={(event) => handleSubmit(event, STYLE_CATEGORIES.category)} >
-                    <img src={STYLE_CATEGORIES.img} />
-                    <h3>{STYLE_CATEGORIES.title}</h3> 
+            <div className="home-card" type="button" key={category.title}>
+                <div className="category-link" onClick={(event) => handleSubmit(event, category)} >
+                    <img src={category.img} />
+                    <h3>{category.title}</h3> 
                 </div>
             </div>
         );

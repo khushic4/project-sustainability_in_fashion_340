@@ -18,11 +18,6 @@ export default function Category(props) {
   );
 };
 
-function CategoryCard(props) {
-  const { categoryData } = props;
-  const { name } = categoryData;
-}
-
 export function CategoryCards() {
   // return (
   //   <div className="style-container">
