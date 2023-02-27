@@ -11,7 +11,8 @@ import { ItemPage } from './ItemPage.js';
 //import { Category } from './Category.js';
 //import { BrandList } from './BrandList.js';
 import { Footer } from './Footer.js';
-import { HomePage } from './HomePage.js';
+import { HomePage } from './Homepage.js';
+
 
 export default function App(props) {
 
