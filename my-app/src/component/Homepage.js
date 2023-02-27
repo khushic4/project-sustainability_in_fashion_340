@@ -1,9 +1,10 @@
 import React from 'react';
 import { useNavigate } from 'react-router-dom';
 
-import STYLE_CATEGORIES from '../data/stylecategories.json'
+import { STYLE_CATEGORIES } from '../data/stylecategories'
 
 export function HomePage(props) {
+    console.log("HERE WE ARE")
     return (
         <div>
             <StyleCategories applyFilterCallback={props.applyFilterCallback} />
@@ -17,8 +18,9 @@ function StyleCategories(props) {
     const navigate = useNavigate();
 
     const handleSubmit = (event, prop) => {
-       props.applyFilterCallback(prop); 
-       navigate('/BrowsePage');
+        console.log(event)
+        props.applyFilterCallback(prop); 
+        navigate('/BrowsePage');
     }
 
     const categories = STYLE_CATEGORIES.map((categories) => {
