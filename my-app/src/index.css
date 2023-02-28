@@ -20,6 +20,10 @@ a {
     text-decoration: none;
 }
 
+.home-card {
+    
+}
+
 .container{
     display: flex;
     flex-wrap: wrap;
