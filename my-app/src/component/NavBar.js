@@ -41,15 +41,15 @@ export function NavBar(props) {
             { menuVisibility && (<div className="navbar">
                 <ul>
                     <li>
-                        <Link to="index.html">
+                        <button onClick={handleFunction('/home')}>
                         <img alt="Navigation" src="img/sitelogo.jpeg" className="logo" />
-                        </Link>
+                        </button>
                     </li>
-                    <Link to="index.html">
+                        <button onClick={handleFunction('/home')}>
                         <li>
                             <h1 className="name">ShopSpree</h1>
                         </li>
-                    </Link>
+                        </button>
                     </ul>
                         <Link to="index.html"></Link>
                     <ul>

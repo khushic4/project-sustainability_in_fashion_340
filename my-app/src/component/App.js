@@ -23,7 +23,7 @@ export default function App(props) {
             <div className="route-choice">
                 <Routes>
                     <Route path="/home" element={<HomePage />} />
-                    <Route path="/item" element={<ItemPage />} />
+                    <Route path="/items" element={<ItemPage />} />
                     <Route path="/about" element={<AboutPage />} />
                     <Route path="/brands" element={<Brands />} />
                 </Routes>
