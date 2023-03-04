@@ -32,24 +32,13 @@ export function NavBar(props) {
     return (
         <header className="navbar-bg">
             <nav>
-                <button onClick={handleHamburgerClick} className="hamburger-menu"><i aria-label="menu"></i>
-                    <span className="icon-bar"></span>
-                    <span className="icon-bar"></span>
-                    <span className="icon-bar"></span>
-                </button>
-
             { menuVisibility && (<div className="navbar">
                 <ul>
                     <li>
                         <button onClick={handleFunction('/home')}>
-                        <img alt="Navigation" src="img/sitelogo.jpeg" className="logo" />
+                            <h1 className="name">ShopSpree <img alt="Navigation" src="img/sitelogo.jpeg" className="logo" /></h1>
                         </button>
                     </li>
-                        <button onClick={handleFunction('/home')}>
-                        <li>
-                            <h1 className="name">ShopSpree</h1>
-                        </li>
-                        </button>
                     </ul>
                         <Link to="index.html"></Link>
                     <ul>
