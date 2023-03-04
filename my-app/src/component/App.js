@@ -7,14 +7,17 @@ import { Route, Routes } from 'react-router-dom';
 import { NavBar } from './NavBar.js';
 import { AboutPage } from './AboutPage.js';
 import { ItemPage } from './ItemPage.js';
-import { Category } from './Category.js';
 import { BrandList } from './BrandList.js';
+import { BrandCard } from './BrandCard.js';
 import { Footer } from './Footer.js';
 import { HomePage } from './Homepage.js';
 import { Brands } from './Brands.js';
+import BRAND_INFO from './brandinfo.js'
 
 
 export default function App(props) {
+
+    const brandCards = BRAND_INFO;
 
     return (
         //<Router>
@@ -25,7 +28,10 @@ export default function App(props) {
                     <Route path="/home" element={<HomePage />} />
                     <Route path="/items" element={<ItemPage />} />
                     <Route path="/about" element={<AboutPage />} />
-                    <Route path="/brands" element={<Brands />} />
+                    <Route path="/brands" element={<Brands />} >
+                        <Route path="/adopt/:brandName" element={<BrandCard />} />
+                        <Route index element={<BrandList brandCards={brandCards} />} />
+                    </Route>
                 </Routes>
             </div>
             <Footer />

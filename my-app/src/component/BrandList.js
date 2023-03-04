@@ -1,22 +1,6 @@
 import React from 'react';
-import Category from './Category.js'
-
-function BrandCard(props) {
-    const { brandData } = props;
-    const {name, category, description, link} = brandData;
-
-    return (
-        <div className="brand-container">
-                <img className="brand-image" src={brandData.img} alt={name}/>
-                <div className="brand-middle">
-                    <p>{brandData.description}</p>
-                    <a href={brandData.link} target="_blank">
-                        <div className="brand-text">shop now</div>
-                    </a>
-                </div>
-            </div>
-    );
-}
+import BrandCard from './BrandCard';
+import { useParams } from 'react-router-dom';
 
 export function BrandList(props) {
     const { brands, brandData } = props;
@@ -35,6 +19,7 @@ export function BrandList(props) {
         </div>
     )
 }
+
 
 
 
