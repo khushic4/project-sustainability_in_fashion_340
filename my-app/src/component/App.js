@@ -1,4 +1,4 @@
-// import React, { useState } from 'react';
+import React from 'react';
 import { Route, Routes } from 'react-router-dom';
 
 //import { Routes, Route, Router } from 'react-router-dom';
@@ -25,7 +25,7 @@ export default function App(props) {
             {<NavBar />}
             <div className="route-choice">
                 <Routes>
-                    <Route path="/home" element={<HomePage />} />
+                    <Route path="/" element={<HomePage />} />
                     <Route path="/items" element={<ItemPage />} />
                     <Route path="/about" element={<AboutPage />} />
                     <Route path="/brands" element={<Brands />} />

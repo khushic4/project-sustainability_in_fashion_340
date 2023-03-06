@@ -1,7 +1,7 @@
 import React from 'react';
 import { useNavigate } from 'react-router-dom';
 
-import { STYLE_CATEGORIES } from '../data/stylecategories'
+import  STYLE_CATEGORIES  from '../data/stylecategories.json'
 
 export function HomePage(props) {
     return (

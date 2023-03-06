@@ -1,4 +1,5 @@
-export const BRANDS = [
+[
+
     {"name":"Girlfriend Collective", "category":"Athleisure and Athletic Clothing", "description":"Girlfriend Collective produces high quality cute clothes from recycled materials all in an eco-friendly package and recycling program", "img":"img/girlfriendcollective.jpg", "link":"https://girlfriend.com/", "price":"M"},
     {"name":"Outdoor Voices", "category":"Athleisure and Athletic Clothing", "description":"Outdoor Voices focuses on sustainability and inclusivity to create beautiful modern atheltic wear for all shapes and sizes", "img":"img/outdoorvoices.jpg", "link":"https://www.outdoorvoices.com/", "price":"H"},
     {"name":"Reformation", "category":"Athleisure and Athletic Clothing", "description":"Ref Active, by Reformation, is a highly sustainable and climate-friendly athleisure line that focuses on simplicity and quality", "img":"img/reformation.jpg", "link":"https://www.thereformation.com/", "price":"H"},

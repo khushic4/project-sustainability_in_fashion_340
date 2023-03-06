@@ -35,7 +35,7 @@ export function NavBar(props) {
             { menuVisibility && (<div className="navbar">
                 <ul>
                     <li>
-                        <button onClick={handleFunction('/home')}>
+                        <button onClick={handleFunction('/')}>
                             <h1 className="name">ShopSpree <img alt="Navigation" src="img/sitelogo.jpeg" className="logo" /></h1>
                         </button>
                     </li>
@@ -43,7 +43,7 @@ export function NavBar(props) {
                         <Link to="index.html"></Link>
                     <ul>
                     <li>
-                        <button onClick={handleFunction('/home')}> home </button>
+                        <button onClick={handleFunction('/')}> home </button>
                     </li>
                     <li>
                         <button onClick={handleFunction('/items')}> items </button>
