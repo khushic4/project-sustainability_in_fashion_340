@@ -1,6 +1,5 @@
 import React from 'react';
 import { useNavigate } from 'react-router-dom';
-
 import  STYLE_CATEGORIES  from '../data/stylecategories.json'
 
 var link = document.createElement('link');
@@ -29,7 +28,7 @@ function StyleCategories(props) {
         return (
             <div className="home-card" type="button" key={category.title}>
                 <div className="category-link" onClick={() => handleSubmit(category.title)} >
-                    <img src={category.img} />
+                    <img src={category.img} alt={category.name}/>
                     <h3>{category.title}</h3>
                 </div>
             </div>
