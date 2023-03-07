@@ -273,21 +273,35 @@ main {
     align-content: space-between;
   }
   
-  .style-container {
+.style-container {
     flex: 0 0 19rem; 
     margin: 0.5rem; 
   }
 
-  .style-container p {
+.style-container p {
     margin-top: 1rem;
     margin-bottom: 1rem;
     color: #525B38;
   }
 
-  .style-container img {
+.style-container img {
     height: 400px;
     min-width: 100%;
   }
+
+#dropdown-basic-button {
+    display: inline-block;
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.subcategoryTitle {
+    
+}
 
 @media (min-width: 598px){
     navbar{

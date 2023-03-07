@@ -3,6 +3,11 @@ import { useNavigate } from 'react-router-dom';
 
 import  STYLE_CATEGORIES  from '../data/stylecategories.json'
 
+var link = document.createElement('link');
+link.rel = 'stylesheet';
+link.href = 'https://fonts.googleapis.com/css?family=Playfair+Display';
+document.head.appendChild(link);
+
 export function HomePage(props) {
     return (
         <div>
@@ -23,7 +28,7 @@ function StyleCategories(props) {
     const categories = STYLE_CATEGORIES.map((category) => {
         return (
             <div className="home-card" type="button" key={category.title}>
-                <div className="category-link text-center" onClick={() => handleSubmit(category.title)} >
+                <div className="category-link" onClick={() => handleSubmit(category.title)} >
                     <img src={category.img} />
                     <h3>{category.title}</h3>
                 </div>
