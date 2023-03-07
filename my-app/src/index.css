@@ -107,9 +107,15 @@ nav img {
     flex: auto;
     display: inline-flex;
     flex-wrap: wrap;
-    justify-content: center;
     flex-direction: row;
     align-content: space-between;
+    flex: 0 0 250px;
+    margin: 0.5rem;
+    position: relative;
+}
+
+.home-title {
+    text-align: center;
 }
       
 .home-card img {
@@ -276,18 +282,17 @@ main {
 .style-container {
     margin: 0.5rem;
     position: relative;
-
-  }
-
+}
 
 .style-container img {
     height: 40em;
     min-width: 100%;
-  }
+}
 
 .navbar-bg {
     font-size: 1.5em;
 }
+
 #dropdown-basic-button {
     display: inline-block;
     background-color: #525B38;

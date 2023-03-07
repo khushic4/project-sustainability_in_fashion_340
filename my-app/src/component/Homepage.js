@@ -29,7 +29,7 @@ function StyleCategories(props) {
             <div className="home-card" type="button" key={category.title}>
                 <div className="category-link" onClick={() => handleSubmit(category.title)} >
                     <img src={category.img} alt={category.name}/>
-                    <h3>{category.title}</h3>
+                    <h3 className="home-title">{category.title}</h3>
                 </div>
             </div>
         );
