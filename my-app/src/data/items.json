@@ -1,0 +1,14 @@
+[
+    {"name":"Girlfriend Collective", "category":"outerwear", "img":"img/girlfriend.png", "description":"Outwear from Girlfriend Collective.","link":"https://girlfriend.com/collections/outerwear"},
+    {"name":"Outdoor Voices", "category":"outerwear", "img":"img/OutdoorVoices.png", "description":"Outwear from Outdoor Voices.","link":"https://www.outdoorvoices.com/collections/w-jackets"},
+    {"name":"Reformation", "category":"outerwear", "img":"img/reformation.png", "description":"Outwear from Reformation.","link":"https://www.thereformation.com/search?q=outerwear&lang=default"},
+    {"name":"Patagonia", "category":"outerwear", "img":"img/patagonia.png", "description":"Outwear from Patagonia.","link":"https://www.patagonia.com/shop/outerwear"},
+    {"name":"Bamford", "category":"pants", "img":"img/bamford.png", "description":"Pants from Bamford.","link":"https://www.bamford.com/catalogsearch/result/?q=pants"},
+    {"name":"Harvest and Mill", "category":"pants", "img":"img/harvest.png", "description":"Pants from Harvest and Mill.","link":"https://harvestandmill.com/search?options%5Bprefix%5D=last&page=2&q=pants"},
+    {"name":"Toad&Co", "category":"pants", "img":"img/Toad.png", "description":"Pants from Toad & Co.","link":"https://www.toadandco.com/search?q=pants&view=shop"},
+    {"name":"Amour Vert", "category":"pants", "img":"img/Amour.png", "description":"Pants from Amour Vert.","link":"https://amourvert.com/search?q=pants"},
+    {"name":"Everlane", "category":"pants", "img":"img/everlaneitems.png", "description":"Tops from Everlane.","link":"https://www.everlane.com/search?q=tops"},
+    {"name":"TenTree", "category":"pants", "img":"img/tentreeitems.png", "description":"Tops from TenTree.","link":"https://www.tentree.com/?utm_campaign=fairtrade-clothing&utm_medium=affiliate&utm_source=thegoodtrade"},
+    {"name":"For Days", "category":"pants", "img":"img/fordays.png", "description":"Tops from For Days.","link":"https://fordays.com/search?type=product%2Cpage&q=tops*"},
+    {"name":"Whimsy&Row", "category":"pants", "img":"img/Whimsey&Row.png", "description":"Tops from Whimsy&Row.","link":"https://whimsyandrow.com/search?type=product&q=tops"}
+]
