@@ -38,7 +38,7 @@ function StyleCategories(props) {
 
     return (
         <main>
-            <h1 style={{ margin: "2em" }}>shop by style category</h1>
+            <h1 style={{ margin: "1em" }}>shop by style category</h1>
             <div className="style">
                 <div className="style-container">
                     {categories}
