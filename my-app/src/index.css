@@ -303,6 +303,10 @@ main {
     cursor: pointer;
 }
 
+.category-name {
+    display: inline-block;
+}
+
 @media (min-width: 598px){
     navbar{
         display: none;

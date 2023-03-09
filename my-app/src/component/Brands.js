@@ -48,8 +48,9 @@ export function Brands() {
 
     return (
         <div className="category-wrapper">
-            <h1 className="category-name" style={{ margin: "1em" }}>{categoryName}</h1>
-            {PricesDropDown()}
+            <div className="category-name">
+                <h1 style={{ margin: "1em" }}>{categoryName} {PricesDropDown()}</h1> 
+            </div>
             <div className="brand">
                 {brandCards(categoryName)}
             </div>
