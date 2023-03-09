@@ -25,7 +25,7 @@ export default function App(props) {
             {<NavBar />}
             <div className="route-choice">
                 <Routes>
-                    <Route path="/index" element={<HomePage />} />
+                    <Route path="/" element={<HomePage />} />
                     <Route path="/items" element={<ItemPage />} />
                     <Route path="/about" element={<AboutPage />} />
                     <Route path="/brands" element={<Brands />} />
