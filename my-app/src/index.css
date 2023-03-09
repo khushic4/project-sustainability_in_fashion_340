@@ -282,6 +282,15 @@ main {
 .style-container {
     margin: 0.5rem;
     position: relative;
+    margin-left: 10em;
+    align-items: flex-start;
+    justify-content: flex-start;
+}
+
+.style-shop-title {
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
 }
 
 .style-container img {
