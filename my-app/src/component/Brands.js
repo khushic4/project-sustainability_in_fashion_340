@@ -32,7 +32,10 @@ export function Brands() {
         );
       }
 
-    const brandCards = (category) => BRANDS.filter(brand => (brand.category === category)).filter(brand => (price === prices.All || (brand.price === price))).map((brand) => {
+    const brandCards = (category) => BRANDS.filter(
+        brand => (brand.category === category))
+        .filter(brand => (price === prices.All || (brand.price === price)))
+        .map((brand) => {
         return (
             <div className="brand-container">
                 <img className="brand-image" src={brand.img} alt={brand.name}/>

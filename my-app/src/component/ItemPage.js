@@ -7,7 +7,6 @@ link.href = 'https://fonts.googleapis.com/css?family=Playfair+Display';
 document.head.appendChild(link);
 
 export function ItemPage(props) {
-
     const pants = ITEMS.map((item) => {
         if (item.category === "pants"){
             return (
@@ -70,13 +69,13 @@ export function ItemPage(props) {
                 </div>
             </div>
             <div className="itemsTitle">
-                <h2 style={{ margin: "1em" }}>Outerwear from Sustainable Brands</h2>
+                <h2 style={{ margin: "1em" }}>Pants from Sustainable Brands</h2>
                 <div className="brand">
                         {pants}
                 </div>
             </div>
             <div className="itemsTitle">
-                <h2 style={{ margin: "1em" }}>Outerwear from Sustainable Brands</h2>
+                <h2 style={{ margin: "1em" }}>Tops from Sustainable Brands</h2>
                 <div className="brand">
                         {tops}
                 </div>
