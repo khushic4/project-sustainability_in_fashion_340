@@ -5,7 +5,7 @@ export function Footer(props) {
     return (
         <footer>
             <div className="footer-info">
-                <h3>© ShopSpree</h3>
+                <h3>&copy;© ShopSpree</h3>
                 <p>ShopSpree creates a happier yet more affordable and sustainable shopping
                     experience for young consumers.</p>
                 <p>Stay up to date with all the latest trends through our socials.</p>

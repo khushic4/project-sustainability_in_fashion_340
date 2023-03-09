@@ -20,31 +20,30 @@ export function NavBar(props) {
         }
         return handleButtonClick
     }
-    
+
     return (
         <header className="navbar-bg">
             <nav>
-            { menuVisibility && (<div className="navbar">
-                <ul>
-                    <li>
-                        <button onClick={handleFunction('/')}>
-                            <h1 className="name">ShopSpree <img alt="Navigation" src="img/sitelogo.jpeg" className="logo" /></h1>
-                        </button>
-                    </li>
-                    </ul>
-                        <Link to="index.html"></Link>
+                {menuVisibility && (<div className="navbar">
                     <ul>
-                    <li>
-                        <button onClick={handleFunction('/')}> home </button>
-                    </li>
-                    <li>
-                        <button onClick={handleFunction('/items')}> items </button>
-                    </li>
-                    <li>
-                    <button onClick={handleFunction('/about')}> about us </button>
-                    </li>
-                </ul>
-            </div>) }
+                        <li>
+                            <button onClick={handleFunction('/')}>
+                                <h1 className="name">ShopSpree <img alt="Navigation" src="img/sitelogo.jpeg" className="logo" /></h1>
+                            </button>
+                        </li>
+                    </ul>
+                    <ul>
+                        <li>
+                            <button onClick={handleFunction('/')}> home </button>
+                        </li>
+                        <li>
+                            <button onClick={handleFunction('/items')}> items </button>
+                        </li>
+                        <li>
+                            <button onClick={handleFunction('/about')}> about us </button>
+                        </li>
+                    </ul>
+                </div>)}
             </nav>
         </header>
 

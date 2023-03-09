@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
-import { useLocation } from 'react-router-dom';
-import  BRANDS  from '../data/brandinfo.json';
+import { Link, useLocation } from 'react-router-dom';
+import BRANDS from '../data/brandinfo.json';
 import Dropdown from 'react-bootstrap/Dropdown';
 import DropdownButton from 'react-bootstrap/DropdownButton';
 
@@ -12,7 +12,7 @@ const prices = {
 }
 
 export function Brands() {
-    const {state} = useLocation();
+    const { state } = useLocation();
     const [price, setPrice] = useState(prices.All)
     const { categoryName } = state; // Read values passed on state
     console.log(price)
@@ -23,14 +23,14 @@ export function Brands() {
 
     function PricesDropDown() {
         return (
-          <DropdownButton id="dropdown-basic-button" title="Price">
-            <Dropdown.Item onClick={() => onPriceFilterClick(prices.All)}>All</Dropdown.Item>
-            <Dropdown.Item onClick={() => onPriceFilterClick(prices.Low)}>Low</Dropdown.Item>
-            <Dropdown.Item onClick={() => onPriceFilterClick(prices.Medium)}>Medium</Dropdown.Item>
-            <Dropdown.Item onClick={() => onPriceFilterClick(prices.High)}>High</Dropdown.Item>
-          </DropdownButton>
+            <DropdownButton id="dropdown-basic-button" title="Price">
+                <Dropdown.Item onClick={() => onPriceFilterClick(prices.All)}>All</Dropdown.Item>
+                <Dropdown.Item onClick={() => onPriceFilterClick(prices.Low)}>Low</Dropdown.Item>
+                <Dropdown.Item onClick={() => onPriceFilterClick(prices.Medium)}>Medium</Dropdown.Item>
+                <Dropdown.Item onClick={() => onPriceFilterClick(prices.High)}>High</Dropdown.Item>
+            </DropdownButton>
         );
-      }
+    }
 
     const brandCards = (category) => BRANDS.filter(
         brand => (brand.category === category))
@@ -38,21 +38,22 @@ export function Brands() {
         .map((brand) => {
         return (
             <div className="brand-container">
-                <img className="brand-image" src={brand.img} alt={brand.name}/>
+                <img className="brand-image" src={brand.img} alt={brand.name} />
                 <div className="brand-middle">
                     <p>{brand.description}</p>
-                    <a href={brand.link} target="_blank">
+                    <Link href={brand.link} target="_blank">
                         <div className="brand-text">shop now</div>
-                    </a>
+                    </Link>
                 </div>
             </div>
         );
     });
 
     return (
-        <div>
-            <h1 style={{ margin: "1em" }}>{categoryName}</h1>
-            {PricesDropDown()}
+        <div className="category-wrapper">
+            <div className="category-name">
+                <h1 style={{ margin: "1em" }}>{categoryName} {PricesDropDown()}</h1> 
+            </div>
             <div className="brand">
                 {brandCards(categoryName)}
             </div>
@@ -63,4 +64,3 @@ export function Brands() {
 
 
 
-  
