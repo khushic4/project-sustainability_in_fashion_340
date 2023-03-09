@@ -25,11 +25,11 @@ export default function App(props) {
             {<NavBar />}
             <div className="route-choice">
                 <Routes>
-                    <Route path="/" element={<HomePage />} />
+                    <Route path="/index" element={<HomePage />} />
                     <Route path="/items" element={<ItemPage />} />
                     <Route path="/about" element={<AboutPage />} />
                     <Route path="/brands" element={<Brands />} />
-                        {/*}
+                    {/*}
                         <Route path="/adopt/:brandName" element={<BrandCard />} />
                         <Route index element={<BrandList brandCards={brandCards} />} />
                     </Route> */}
@@ -40,6 +40,6 @@ export default function App(props) {
         //</Router>
     );
 }
-   
+
 
 
