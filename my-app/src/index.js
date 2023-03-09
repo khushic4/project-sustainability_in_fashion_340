@@ -8,20 +8,20 @@ import  BRANDS  from './data/brandinfo.json'; //the data to display
 import { BrowserRouter } from 'react-router-dom';
 
 
-//AJAX TEMPLATE CODE
-const url = "https:www...";
-console.log("about to send request");
+// //AJAX TEMPLATE CODE
+// const url = "https:www...";
+// console.log("about to send request");
 
-const aPromise = fetch (url)
-  aPromise.then(function(response) {
-    console.log(response);
-  })
-  const dataPromise = response.json()
+// const aPromise = fetch (url)
+//   aPromise.then(function(response) {
+//     console.log(response);
+//   })
+//   const dataPromise = response.json()
 
-  dataPromise.then(function(data) {
-    console.log(data);
-  })
-//AJAX TEMPLATE CODE
+//   dataPromise.then(function(data) {
+//     console.log(data);
+//   })
+// //AJAX TEMPLATE CODE
 
 
 const root = ReactDOM.createRoot(document.getElementById('root'));

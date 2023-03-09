@@ -13,8 +13,8 @@ import { Brands } from './Brands.js';
 
 
 export default function App(props) {
-    const [] = useState([]);
-    const [] = useState([]);
+    // const [] = useState([]);
+    // const [] = useState([]);
 
     return (
         //<Router>
