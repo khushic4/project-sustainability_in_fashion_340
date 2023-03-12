@@ -7,18 +7,6 @@ link.href = 'https://fonts.googleapis.com/css?family=Playfair+Display';
 document.head.appendChild(link);
 
 export function ItemPage(props) {
-    const [isFavorited, setIsFavorited] = useState([]);
-
-    function toggleFav(item){
-        console.log(item);
-        if (isFavorited.includes(item)){
-            setIsFavorited(isFavorited.filter((c) => c.name !== item.name));
-        }
-        else {
-            setIsFavorited([...isFavorited, item]);
-        }
-    }
-
     const pants = ITEMS.map((item) => {
         if (item.category === "pants"){
             return (

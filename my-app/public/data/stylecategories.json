@@ -2,43 +2,43 @@
     {
         "title": "casual, everyday wear",
         "category": "casual",
-        "img": "../img/casualeveryday.jpg"
+        "img": "../img/casualeveryday.jpeg"
     },
     {
         "title": "night out",
         "category": "night out",
-        "img": "../img/nightout.jpg"
+        "img": "../img/nightout.jpeg"
     },
     {
         "title": "business casual office wear",
         "category": "business casual",
-        "img": "../img/businesscasual.jpg"
+        "img": "../img/businesscasual.jpeg"
     },
     {
         "title": "athleisure and athletic clothing",
         "category": "Athleisure",
-        "img": "../img/athleisure.jpg" 
+        "img": "../img/athleisure.jpeg" 
 
     },
     {
         "title": "formal wear",
         "category": "Formal",
-        "img": "../img/formal.jpg"
+        "img": "../img/formal.jpeg"
 
     },
     {
         "title": "intimates",
         "category": "Intimates",
-        "img": "../img/intimates.jpg"
+        "img": "../img/intimates.jpeg"
     },
     {
         "title": "beach and vacation wear",
         "category": "Beachwear",
-        "img": "../img/vacation.jpg"
+        "img": "../img/beachwear.jpeg"
     },
     {
         "title": "accessories",
         "category": "Accessories",
-        "img": "../img/accessories.jpg"
+        "img": "../img/accessories.jpeg"
     }
 ]

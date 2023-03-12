@@ -1,6 +1,6 @@
 import React from 'react';
 import { useNavigate } from 'react-router-dom';
-import  STYLE_CATEGORIES  from '../data/stylecategories.json'
+//import  STYLE_CATEGORIES  from '../data/stylecategories.json'
 
 var link = document.createElement('link');
 link.rel = 'stylesheet';
@@ -10,13 +10,15 @@ document.head.appendChild(link);
 export function HomePage(props) {
     return (
         <div>
-            <StyleCategories applyFilterCallback={props.applyFilterCallback} />
+            <StyleCategories STYLE_CATEGORIES={props.STYLE_CATEGORIES} applyFilterCallback={props.applyFilterCallback} />
         </div>
     )
 
 }
 
 function StyleCategories(props) {
+    let STYLE_CATEGORIES = props.STYLE_CATEGORIES;
+    console.log(STYLE_CATEGORIES);
 
     const navigate = useNavigate();
 
@@ -37,12 +39,11 @@ function StyleCategories(props) {
 
     return (
         <main>
-            <h1 style={{ margin: "1em" }}>shop by style category</h1>
-            <div className="style">
+            <h1 className= "style-shop-title" style={{ margin: "1em" }}>shop by style category</h1>
                 <div className="style-container">
                     {categories}
                 </div>
-            </div>
+
         </main>
     )
 }
