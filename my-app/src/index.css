@@ -247,7 +247,15 @@ footer {
     left: 50%;
     transform: translate(-50%, -50%);
     -ms-transform: translate(-50%, -50%);
+}
+
+.brand-middle button {
+    background-color: #525B38;
+    color: white;
+    font-size: 12px;
+    padding: 12px 30px;
     text-align: center;
+    position: absolute;
 }
   
 .brand-container:hover .brand-image {
