@@ -7,7 +7,6 @@ link.href = 'https://fonts.googleapis.com/css?family=Playfair+Display';
 document.head.appendChild(link);
 
 export function ItemPage(props) {
-    export function ItemPage(props) {
         const [isFavorited, setIsFavorited] = useState([]);
     
         function toggleFav(item){
@@ -127,4 +126,3 @@ export function ItemPage(props) {
             </main>
         )
     }
-}
