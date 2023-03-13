@@ -4,8 +4,6 @@ import { Route, Routes } from 'react-router-dom';
 import  STYLE_CATEGORIES  from '../data/stylecategories.json'
 import ITEMS from '../data/items.json';
 import BRANDS from '../data/brandinfo.json';
-//import { getAuth } from 'firebase/auth';
-
 import { NavBar } from './NavBar.js';
 import { AboutPage } from './AboutPage.js';
 import { ItemPage } from './ItemPage.js';
@@ -20,15 +18,15 @@ export default function App(props) {
     const [ITEMS, setItems] = useState([]); 
 
     useEffect(() => {
-        fetch('data/stylecategories.json')
+        fetch('../data/stylecategories.json')
         .then((response) => response.json())
         .then((data) => setStyle_Categories(data)); 
 
-        fetch('data/brandinfo.json')
+        fetch('../data/brandinfo.json')
         .then((response) => response.json())
         .then((data) => setBrands(data)); 
 
-        fetch('data/items.json')
+        fetch('../data/items.json')
         .then((response) => response.json())
         .then((data) => setItems(data)); 
     }, []);

@@ -12,7 +12,6 @@ const prices = {
 }
 
 export function Brands(props) {
-    const BRANDS = props.BRANDS;
     const { state } = useLocation();
     const [price, setPrice] = useState(prices.All)
     const { categoryName } = state; // Read values passed on state
