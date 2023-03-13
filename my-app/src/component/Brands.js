@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { Link, useLocation } from 'react-router-dom';
-//import BRANDS from '../data/brandinfo.json';
+import BRANDS from '../data/brandinfo.json';
 import Dropdown from 'react-bootstrap/Dropdown';
 import DropdownButton from 'react-bootstrap/DropdownButton';
 
@@ -12,7 +12,7 @@ const prices = {
 }
 
 export function Brands(props) {
-    let BRANDS = props.BRANDS;
+    const BRANDS = props.BRANDS;
     const { state } = useLocation();
     const [price, setPrice] = useState(prices.All)
     const { categoryName } = state; // Read values passed on state

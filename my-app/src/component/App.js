@@ -1,11 +1,9 @@
 import React from 'react';
 import { useState, useEffect } from "react";
 import { Route, Routes } from 'react-router-dom';
-// import  STYLE_CATEGORIES  from '../data/stylecategories.json'
-// import ITEMS from '../data/items.json';
-// import BRANDS from '../data/brandinfo.json';
-
-//import { Routes, Route, Router } from 'react-router-dom';
+import  STYLE_CATEGORIES  from '../data/stylecategories.json'
+import ITEMS from '../data/items.json';
+import BRANDS from '../data/brandinfo.json';
 //import { getAuth } from 'firebase/auth';
 
 import { NavBar } from './NavBar.js';
