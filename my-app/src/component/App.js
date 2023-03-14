@@ -1,9 +1,6 @@
 import React from 'react';
 import { useState, useEffect } from "react";
 import { Route, Routes } from 'react-router-dom';
-import  STYLE_CATEGORIES  from '../data/stylecategories.json'
-import ITEMS from '../data/items.json';
-import BRANDS from '../data/brandinfo.json';
 import { NavBar } from './NavBar.js';
 import { AboutPage } from './AboutPage.js';
 import { ItemPage } from './ItemPage.js';
