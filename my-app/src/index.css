@@ -217,6 +217,7 @@ footer {
     display: block;
     margin: auto;
     transition: .5s;
+    position: relative;
 }
 
 .brand-container p {
@@ -250,12 +251,16 @@ footer {
 }
 
 .brand-middle button {
-    background-color: #525B38;
+    background-color: #ff7265;
     color: white;
+    border-radius: 10%;
     font-size: 12px;
     padding: 12px 30px;
-    text-align: center;
+    justify-item: right;
     position: absolute;
+    display: flex;
+    top: 0;
+    right: 0;
 }
 
 .brand-container:hover .brand-image {

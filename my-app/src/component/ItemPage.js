@@ -23,7 +23,6 @@ export function ItemPage(props) {
             if (item.category === "pants"){
                 return (
                     <div className="brand-container" type="button" key={item.name}>
-                        <div>
                             <img className="brand-image"src={item.img} alt={item.name}/>
                             <div className="brand-middle">
                                 <h3>{item.name}</h3>
@@ -31,11 +30,10 @@ export function ItemPage(props) {
                                 <a href={item.link} target="_blank">
                                     <div className="brand-text">shop now</div>
                                 </a>
-                                <button onClick={() => toggleFav(item)}>
+                                <button className="favorite-button" onClick={() => toggleFav(item)}>
                                     {isFavorited.includes(item) ? "Remove from favorites" : "Add to favorites"}
                                 </button>
                             </div>
-                        </div>
                     </div>
                 );
             }
@@ -52,7 +50,7 @@ export function ItemPage(props) {
                                 <a href={item.link} target="_blank">
                                     <div className="brand-text">shop now</div>
                                 </a>
-                                <button onClick={() => toggleFav(item)}>
+                                <button className="favorite-button" onClick={() => toggleFav(item)}>
                                     {isFavorited.includes(item) ? "Remove from favorites" : "Add to favorites"}
                                 </button>
                             </div>
@@ -64,7 +62,7 @@ export function ItemPage(props) {
         const tops = ITEMS.map((item) => {
             if (item.category === "tops"){
                 return (
-                    <div className="brand-container" type="button" key={item.name}>
+                     <div className="brand-container" type="button" key={item.name}>
                         <img className="brand-image"src={item.img} alt={item.name}/>
                             <div className="brand-middle">
                                 <h3>{item.name}</h3>
@@ -72,7 +70,7 @@ export function ItemPage(props) {
                                 <a href={item.link} target="_blank">
                                     <div className="brand-text">shop now</div>
                                 </a>
-                                <button onClick={() => toggleFav(item)}>
+                                <button className="favorite-button" onClick={() => toggleFav(item)}>
                                     {isFavorited.includes(item) ? "Remove from favorites" : "Add to favorites"}
                                 </button>
                             </div>
@@ -90,7 +88,7 @@ export function ItemPage(props) {
                                     <a href={item.link} target="_blank">
                                         <div className="brand-text">shop now</div>
                                     </a>
-                                    <button onClick={() => toggleFav(item)}>
+                                    <button className="favorite-button" onClick={() => toggleFav(item)}>
                                     {isFavorited.includes(item) ? "Remove from favorites" : "Add to favorites"}
                                     </button>
                                 </div>

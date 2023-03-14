@@ -2,17 +2,17 @@
     {
         "title": "casual, everyday wear",
         "category": "casual",
-        "img": "../img/casualeveryday.jpeg"
+        "img": "img/casualeveryday.jpeg"
     },
     {
         "title": "night out",
         "category": "night out",
-        "img": "../img/nightout.jpeg"
+        "img": "img/nightout.jpeg"
     },
     {
         "title": "business casual office wear",
         "category": "business casual",
-        "img": "../img/businesscasual.jpeg"
+        "img": "img/businesscasual.jpeg"
     },
     {
         "title": "athleisure and athletic clothing",
