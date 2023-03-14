@@ -8,7 +8,6 @@ link.href = 'https://fonts.googleapis.com/css?family=Playfair+Display';
 document.head.appendChild(link);
 
 function StyleCategories(props) {
-    console.log(STYLE_CATEGORIES);
 
     const navigate = useNavigate();
 
