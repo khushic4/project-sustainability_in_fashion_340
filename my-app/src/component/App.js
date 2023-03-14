@@ -1,9 +1,6 @@
 import React from 'react';
 import { useState, useEffect } from "react";
 import { Route, Routes } from 'react-router-dom';
-import  STYLE_CATEGORIES  from '../data/stylecategories.json'
-import ITEMS from '../data/items.json';
-import BRANDS from '../data/brandinfo.json';
 import { NavBar } from './NavBar.js';
 import { AboutPage } from './AboutPage.js';
 import { ItemPage } from './ItemPage.js';
@@ -13,22 +10,19 @@ import { Brands } from './Brands.js';
 
 
 export default function App(props) {
-    const [STYLE_CATEGORIES, setStyle_Categories] = useState([]); 
-    const [BRANDS, setBrands] = useState([]); 
-    const [ITEMS, setItems] = useState([]); 
 
     useEffect(() => {
         fetch('../data/stylecategories.json')
         .then((response) => response.json())
-        .then((data) => setStyle_Categories(data)); 
+        .then((data) => Style_Categories(data)); 
 
         fetch('../data/brandinfo.json')
         .then((response) => response.json())
-        .then((data) => setBrands(data)); 
+        .then((data) => Brands(data)); 
 
         fetch('../data/items.json')
         .then((response) => response.json())
-        .then((data) => setItems(data)); 
+        .then((data) => Items(data)); 
     }, []);
 
     return (
