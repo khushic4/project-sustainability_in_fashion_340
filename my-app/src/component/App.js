@@ -17,18 +17,17 @@ export default function App(props) {
     useEffect(() => {
         fetch('../data/stylecategories.json')
         .then((response) => response.json())
-        .then((data) => setStyle_Categories(data)).then(console.log(STYLE_CATEGORIES));
+        .then((data) => setStyle_Categories(data));
          
 
         fetch('../data/brandinfo.json')
         .then((response) => response.json())
         .then((data) => setBrands(data));
-        console.log(BRANDS) 
+         
 
         fetch('../data/items.json')
         .then((response) => response.json())
-        .then((data) => setItems(data));
-        console.log(ITEMS) 
+        .then((data) => setItems(data)); 
     }, []);
 
     return (
