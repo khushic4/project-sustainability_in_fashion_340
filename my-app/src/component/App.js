@@ -36,10 +36,10 @@ export default function App(props) {
             {<NavBar />}
             <div className="route-choice">
                 <Routes>
-                    <Route path="/" element={<HomePage/>} />
-                    <Route path="/items" element={<ItemPage/>} />
+                    <Route path="/" element={<HomePage STYLE_CATEGORIES={STYLE_CATEGORIES}/>} />
+                    <Route path="/items" element={<ItemPage ITEMS={ITEMS}/>} />
                     <Route path="/about" element={<AboutPage />} />
-                    <Route path="/brands" element={<Brands/>} />
+                    <Route path="/brands" element={<Brands BRANDS={BRANDS}/>} />
                 </Routes>
             </div>
             <Footer />
