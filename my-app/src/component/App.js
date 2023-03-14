@@ -10,19 +10,25 @@ import { Brands } from './Brands.js';
 
 
 export default function App(props) {
+    const [STYLE_CATEGORIES, setStyle_Categories] = useState([]); 
+    const [BRANDS, setBrands] = useState([]); 
+    const [ITEMS, setItems] = useState([]); 
 
     useEffect(() => {
         fetch('../data/stylecategories.json')
         .then((response) => response.json())
-        .then((data) => Style_Categories(data)); 
+        .then((data) => setStyle_Categories(data)).then(console.log(STYLE_CATEGORIES));
+         
 
         fetch('../data/brandinfo.json')
         .then((response) => response.json())
-        .then((data) => Brands(data)); 
+        .then((data) => setBrands(data));
+        console.log(BRANDS) 
 
         fetch('../data/items.json')
         .then((response) => response.json())
-        .then((data) => Items(data)); 
+        .then((data) => setItems(data));
+        console.log(ITEMS) 
     }, []);
 
     return (
@@ -30,10 +36,10 @@ export default function App(props) {
             {<NavBar />}
             <div className="route-choice">
                 <Routes>
-                    <Route path="/" element={<HomePage STYLE_CATEGORIES={STYLE_CATEGORIES}/>} />
-                    <Route path="/items" element={<ItemPage ITEMS={ITEMS}/>} />
+                    <Route path="/" element={<HomePage/>} />
+                    <Route path="/items" element={<ItemPage/>} />
                     <Route path="/about" element={<AboutPage />} />
-                    <Route path="/brands" element={<Brands BRANDS={BRANDS}/>} />
+                    <Route path="/brands" element={<Brands/>} />
                 </Routes>
             </div>
             <Footer />
