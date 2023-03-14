@@ -41,7 +41,7 @@ export function Brands(props) {
                 <img className="brand-image" src={brand.img} alt={brand.name} />
                 <div className="brand-middle">
                     <p>{brand.description}</p>
-                    <Link href={brand.link} target="_blank">
+                    <Link to={brand.link} target="_blank">
                         <div className="brand-text">shop now</div>
                     </Link>
                 </div>

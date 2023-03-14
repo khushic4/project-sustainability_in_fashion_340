@@ -1,4 +1,6 @@
 import React from 'react';
+import { Link, useLocation } from 'react-router-dom';
+
 
 export function AboutPage(props) {
 
@@ -25,12 +27,12 @@ export function AboutPage(props) {
                     trends but don't want to spend a lot on new pieces of clothing that will
                     ultimately go out of style in a couple weeks. Consumerism can be ready
                     about{" "}
-                    <a href="https://www.cambridge.org/core/books/abs/america-in-the-world/us-mass-consumerism-in-transnational-perspective/C87883D798FBA090A8FB47F0C8E473D1"
+                    <Link to="https://www.cambridge.org/core/books/abs/america-in-the-world/us-mass-consumerism-in-transnational-perspective/C87883D798FBA090A8FB47F0C8E473D1"
                         target="_blank"> {" "} here {" "}
-                    </a> and {" "}
-                    <a href="https://www.bbc.com/future/article/20210120-how-the-world-became-consumerist"
+                    </Link> and {" "}
+                    <Link to="https://www.bbc.com/future/article/20210120-how-the-world-became-consumerist"
                         target="_blank"> {" "} here.
-                    </a>
+                    </Link>
                     There are a number of issues with fast fashion, such as water pollution,
                     waste management, greenhouse gas emissions, and more. People can also be
                     unaware that they are actually consumers of fast fashion, or they don't

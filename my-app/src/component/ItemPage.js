@@ -1,5 +1,7 @@
 import React, {useState} from 'react';
 import  ITEMS from '../data/items.json';
+import { Link, useLocation } from 'react-router-dom';
+
 
 var link = document.createElement('link');
 link.rel = 'stylesheet';
@@ -27,9 +29,9 @@ export function ItemPage(props) {
                             <div className="brand-middle">
                                 <h3>{item.name}</h3>
                                 <p>{item.description}</p>
-                                <a href={item.link} target="_blank">
+                                <Link to={item.link} target="_blank">
                                     <div className="brand-text">shop now</div>
-                                </a>
+                                </Link>
                                 <button className="favorite-button" onClick={() => toggleFav(item)}>
                                     {isFavorited.includes(item) ? "Remove from favorites" : "Add to favorites"}
                                 </button>
@@ -47,9 +49,9 @@ export function ItemPage(props) {
                             <div className="brand-middle">
                                 <h3>{item.name}</h3>
                                 <p>{item.description}</p>
-                                <a href={item.link} target="_blank">
+                                <Link to={item.link} target="_blank">
                                     <div className="brand-text">shop now</div>
-                                </a>
+                                </Link>
                                 <button className="favorite-button" onClick={() => toggleFav(item)}>
                                     {isFavorited.includes(item) ? "Remove from favorites" : "Add to favorites"}
                                 </button>
@@ -67,9 +69,9 @@ export function ItemPage(props) {
                             <div className="brand-middle">
                                 <h3>{item.name}</h3>
                                 <p>{item.description}</p>
-                                <a href={item.link} target="_blank">
+                                <Link to={item.link} target="_blank">
                                     <div className="brand-text">shop now</div>
-                                </a>
+                                </Link>
                                 <button className="favorite-button" onClick={() => toggleFav(item)}>
                                     {isFavorited.includes(item) ? "Remove from favorites" : "Add to favorites"}
                                 </button>
@@ -85,9 +87,9 @@ export function ItemPage(props) {
                                 <div className="brand-middle">
                                     <h3>{item.name}</h3>
                                     <p>{item.description}</p>
-                                    <a href={item.link} target="_blank">
+                                    <Link to={item.link} target="_blank">
                                         <div className="brand-text">shop now</div>
-                                    </a>
+                                    </Link>
                                     <button className="favorite-button" onClick={() => toggleFav(item)}>
                                     {isFavorited.includes(item) ? "Remove from favorites" : "Add to favorites"}
                                     </button>

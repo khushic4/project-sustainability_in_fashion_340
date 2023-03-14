@@ -1,4 +1,6 @@
 import React from 'react';
+import { Link, useLocation } from 'react-router-dom';
+
 
 export function Footer(props) {
 
@@ -11,21 +13,21 @@ export function Footer(props) {
                 <p>Stay up to date with all the latest trends through our socials.</p>
                 <ul className="links">
                     <li>
-                        <a href="https://www.facebook.com/UWiSchool" target="_blank">
+                        <Link to="https://www.facebook.com/UWiSchool" target="_blank">
                             <i className="fa fa-facebook-f" />
-                        </a>
+                        </Link>
                     </li>
                     <li>
-                        <a href="https://www.instagram.com/uwischool/" target="_blank">
+                        <Link to="https://www.instagram.com/uwischool/" target="_blank">
                             <i className="fa fa-instagram" />
-                        </a>
+                        </Link>
                     </li>
                     <li>
-                        <a
-                            href="https://twitter.com/uw_ischool?s=20&t=6g6UTfndELpQXwPyzvzTog"
+                        <Link
+                            to="https://twitter.com/uw_ischool?s=20&t=6g6UTfndELpQXwPyzvzTog"
                             target="_blank">
                             <i className="fa fa-twitter" />
-                        </a>
+                        </Link>
                     </li>
                 </ul>
             </div>
