@@ -7,6 +7,7 @@ import { ItemPage } from './ItemPage.js';
 import { Footer } from './Footer.js';
 import { HomePage } from './Homepage.js';
 import { Brands } from './Brands.js';
+import BRANDS from '../data/brandinfo.json';
 
 
 export default function App(props) {
@@ -18,7 +19,7 @@ export default function App(props) {
                     <Route path="/" element={<HomePage/>} />
                     <Route path="/items" element={<ItemPage/>} />
                     <Route path="/about" element={<AboutPage />} />
-                    <Route path="/brands" element={<Brands/>} />
+                    <Route path="/brands" element={<Brands brandData={BRANDS}/>} />
                 </Routes>
             </div>
             <Footer />
